@@ -19,7 +19,7 @@ public class MessageController {
 	MessageController(MessageService messageService) {
 		this.messageService = messageService;
 	}
-	
+		
 	@PostMapping("/send")
 	@ResponseStatus(HttpStatus.OK)
 	public String sendMessageDetails(@RequestBody SendMessageDTO sendMessage) {
@@ -27,3 +27,4 @@ public class MessageController {
 	}
 	
 }
+	
